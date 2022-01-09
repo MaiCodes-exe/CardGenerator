@@ -1,1 +1,94 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: green;
+}
+.card {
+  display: flexbox;
+  background: white;
+  margin: auto;
+  height: 400px;
+  width: 250px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  font-size: 70px;
+}
+
+.number {
+  margin-left: 75px;
+  margin-top: 100px;
+}
+
+.heart,
+.heart:before {
+  content: "\2665";
+  color: red;
+  position: absolute;
+  bottom: 150px;
+  left: 30px;
+}
+
+.heart:after {
+  content: "\2665";
+  color: red;
+  position: absolute;
+  top: 150px;
+  right: 30px;
+  transform: rotate(180deg);
+}
+
+.spade,
+.spade:before {
+  content: "\2660";
+  color: black;
+  position: absolute;
+  bottom: 150px;
+  left: 30px;
+}
+
+.spade:after {
+  content: "\2660";
+  color: black;
+  position: absolute;
+  top: 150px;
+  right: 30px;
+  transform: rotate(180deg);
+}
+
+.diamond,
+.diamond:before {
+  content: "\2666";
+  color: red;
+  position: absolute;
+  bottom: 150px;
+  left: 30px;
+}
+
+.diamond:after {
+  content: "\2666";
+  color: red;
+  position: absolute;
+  top: 150px;
+  right: 30px;
+  transform: rotate(180deg);
+}
+
+.club,
+.club:before {
+  content: "\2663";
+  color: black;
+  position: absolute;
+  bottom: 150px;
+  left: 30px;
+}
+
+.club:after {
+  content: "\2663";
+  color: black;
+  position: absolute;
+  top: 150px;
+  right: 30px;
+  transform: rotate(180deg);
+}
