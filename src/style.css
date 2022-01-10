@@ -7,21 +7,25 @@ body {
   );
 }
 .card {
-  display: flexbox;
+  display: inline-block;
   background: whitesmoke;
   margin: auto;
   height: 400px;
   width: 250px;
   padding: 20px;
+  padding-top: 180px;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 10px;
   position: relative;
   text-align: center;
   font-size: 70px;
+  top: 80px;
+  margin-left: 45%;
 }
 
 .number {
-  margin-left: 75px;
+  align-items: center;
+  margin-left: 83px;
   margin-top: 100px;
   font-family: "Pacifico", cursive;
   font-family: "Playfair Display", serif;
@@ -29,17 +33,19 @@ body {
 
 .heart,
 .heart:before {
-  content: "\2665";
-  color: red;
+  display: flex;
+  content: "\2647";
+  color: rgb(117, 1, 55);
   position: absolute;
   bottom: 150px;
-  top: 20px;
   left: 25px;
+  text-align: left;
 }
 
 .heart:after {
-  content: "\2665";
-  color: red;
+  display: flex;
+  content: "\2647";
+  color: rgb(117, 1, 55);
   position: absolute;
   top: 150px;
   right: 25px;
@@ -48,54 +54,65 @@ body {
 
 .spade,
 .spade:before {
-  content: "\2660";
-  color: black;
+  display: flex;
+  content: "\2644";
+  color: rgb(13, 190, 152);
   position: absolute;
   bottom: 150px;
   left: 25px;
+  text-align: left;
 }
 
 .spade:after {
-  content: "\2660";
-  color: black;
+  display: flex;
+  content: "\2644";
+  color: rgb(13, 190, 152);
   position: absolute;
   top: 150px;
   right: 25px;
   transform: rotate(180deg);
+  text-align: right;
 }
 
 .diamond,
 .diamond:before {
-  content: "\2666";
-  color: red;
+  display: flex;
+  content: "\2645";
+  color: rgb(168, 61, 230);
   position: absolute;
   bottom: 150px;
   left: 25px;
+  text-align: left;
 }
 
 .diamond:after {
-  content: "\2666";
-  color: red;
+  display: flex;
+  content: "\2645";
+  color: rgb(168, 61, 230);
   position: absolute;
   top: 150px;
   right: 25px;
+  text-align: right;
   transform: rotate(180deg);
 }
 
 .club,
 .club:before {
-  content: "\2663";
-  color: black;
+  display: flex;
+  content: "\2646";
+  color: rgb(44, 164, 211);
   position: absolute;
   bottom: 150px;
   left: 25px;
 }
 
 .club:after {
-  content: "\2663";
-  color: black;
+  display: flex;
+  content: "\2646";
+  color: rgb(44, 164, 211);
   position: absolute;
   top: 150px;
   right: 25px;
+  text-align: right;
   transform: rotate(180deg);
 }
